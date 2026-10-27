@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Reference routines for laser-induced shock-wave velocity analysis
 
 This repository contains three calculations with explicitly specified numerical conventions, together with synthetic tests that fix those conventions:
@@ -17,15 +16,6 @@ Scope: wavefront segmentation and contour screening, the hybrid displacement mod
 - `ray_ellipse_distance.m`: fixed-origin forward ray–ellipse intersection.
 - `ratio_uncertainty.m`: covariance-aware ratio standard uncertainty.
 - `test_basic_functions.m`: synthetic numerical and invalid-input tests.
-=======
-# Basic laser-shock analysis routines
-
-Standalone MATLAB R2024a reference functions for three calculation steps:
-
-- `fit_axis_aligned_front`: least-squares fit of an axis-aligned ellipse to an already extracted contour.
-- `ray_ellipse_distance`: forward intersection of rays from a fixed origin with the fitted ellipse.
-- `ratio_uncertainty`: delta-method standard error for a ratio of paired independent-unit means.
->>>>>>> origin/main
 
 ## Run the checks
 
@@ -45,10 +35,6 @@ Angles are in radians, measured counterclockwise from the positive x-axis of the
 
 For `ratio_uncertainty`, each paired row represents one independent acquisition unit. The output is the ratio of the two sample means and its first-order delta-method standard error. Recombined or repeated rows from one acquisition unit must not be treated as independent units.
 
-<<<<<<< HEAD
 ## License
 
 MIT. See [LICENSE](LICENSE) for the reuse terms.
-=======
-These routines do not constitute the full image-segmentation, hybrid-fitting, model-selection or nested-validation pipeline. No experimental images, fitted regression models, sample identifiers, private file paths or acquisition metadata are included. The software is provided as reference code without a claim that the synthetic tests constitute experimental validation.
->>>>>>> origin/main
